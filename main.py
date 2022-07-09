@@ -13,7 +13,7 @@ st.subheader("")
 st.subheader("Input Speech Sample")
 
 if file_uploader is not None:
-    with open(os.path.join(file_uploader.name), "wb") as f:
+    with open(os.path.join("code_", file_uploader.name), "wb") as f:
         f.write(file_uploader.getbuffer())
     handle_uploaded_audio_file(file_uploader)
     st.subheader("")
@@ -22,9 +22,9 @@ if file_uploader is not None:
     out = predict(os.path.join(file_uploader.name))
 
     wav_encoder = tf.audio.encode_wav(out, 16000)
-    wav_saver = io_ops.write_file('output.wav', wav_encoder)
+    wav_saver = io_ops.write_file(os.path.join("code_", 'output.wav'), wav_encoder)
 
-    audio_file = open('output.wav', 'rb')
+    audio_file = open(os.path.join('code_', 'output.wav'), 'rb')
     audio_bytes = audio_file.read()
 
     st.subheader("Output Speech Sample")
