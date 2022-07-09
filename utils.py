@@ -1,8 +1,35 @@
+import numpy as np
+import pydub
+import streamlit as st
 import tensorflow as tf
+from scipy.io import wavfile
 
-from main import interpreter, model
+# from main import interpreter, model
 
 batching_size = 12000
+
+
+def handle_uploaded_audio_file(uploaded_file):
+    st.write(uploaded_file)
+    a = pydub.AudioSegment.from_wav(uploaded_file)
+    st.write(a)
+    # st.write(type(a))
+    # st.write(a.sample_width)
+    #
+    # samples = a.get_array_of_samples()
+    # fp_arr = np.array(samples).T.astype(np.float32)
+    # fp_arr /= np.iinfo(samples.typecode).max
+    # st.write(fp_arr.shape)
+
+    # return fp_arr, 22050
+
+
+def audio_to_display(audio):
+    audio_file = open(audio, 'rb')
+    audio_bytes = audio_file.read()
+    return audio_bytes
+    # samplerate, data = wavfile.read(audio)
+    # return samplerate, data
 
 
 def get_audio(path):
