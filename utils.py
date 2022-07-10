@@ -9,9 +9,11 @@ batching_size = 12000
 
 
 def handle_uploaded_audio_file(uploaded_file):
+    st.write("Type : ", type(uploaded_file))
+
     a = pydub.AudioSegment.from_wav(uploaded_file)
 
-    # st.write("A : ", type(a))
+    st.write("A : ", type(a))
 
     # st.write("Width : ",a.sample_width)
 
