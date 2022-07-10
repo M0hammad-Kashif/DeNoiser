@@ -14,8 +14,7 @@ The currrent noise suppression techniques uses Multi-mic system.
 
 [[Watch the video]](https://youtu.be/nKR0W6nJChU)
 ## 🔗 Links 
-![Deployed App](https://img.shields.io/badge/Streamlit-Deployed%20App-black)
-
+[[Web App]](https://m0hammad-kashif-denoisingaudio-main-auy054.streamlitapp.com/)
 
 
 ## Authors
