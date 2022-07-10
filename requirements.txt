@@ -4,3 +4,4 @@ streamlit==1.10.0
 tensorflow==2.9.1
 ffmpeg
 ffmpeg-python
+libav-tools
