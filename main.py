@@ -25,6 +25,9 @@ if file_uploader is not None:
     #     st.audio((file_uploader.read()))
     # handle_uploaded_audio_file(file_uploader)
 
+    # st.write("File Up ",type(file_uploader.read()))
+    # st.audio(file_uploader.read())
+
     out = predict(file_uploader)
 
     st.subheader("")
