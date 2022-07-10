@@ -19,40 +19,22 @@ def _bytes_feature(value):
   return tf.train.Feature(bytes_list=tf.train.BytesList(value=[value])) 
 
 if file_uploader is not None:
-    # with open(file_uploader.name, "wb") as f:
-    #     f.write(file_uploader.getbuffer())
-    #     st.write(type(file_uploader.read()))
-    #     st.audio((file_uploader.read()))
-    # handle_uploaded_audio_file(file_uploader)
 
-    # st.write("File Up ",type(file_uploader.read()))
-    # st.audio(file_uploader.read())
 
     out = predict(file_uploader)
 
     st.subheader("")
     st.subheader("")
-    # st.write(type(out))
+    
 
     wav_encoder = tf.audio.encode_wav(out, 16000)
 
     
     test = wav_encoder.numpy()
 
-    # st.write("Test : ",type(test))
+    
 
     st.subheader("Output Speech Sample")
 
     st.audio(test)
 
-    # st.audio(test)
-
-    # st.audio(wav_encoder
-    # st.write(type(wav_encoder))
-    # wav_saver = io_ops.write_file('output.wav', wav_encoder)
-
-    # audio_file = open('output.wav', 'rb')
-    # audio_bytes = audio_file.read()
-
-
-    # st.audio(audio_bytes, format='audio/wav')
