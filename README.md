@@ -1,4 +1,5 @@
-# DeNoisingAudio
+# DeNoisingAudio 
+### This project was built in `Sound of AI Hackathon`.
 ## Problem 
 Speech denoising is a long-standing problem. We can imagine someone talking in a video conference while there is a random background noise. In this situation, a speech denoising system has the job of removing the background noise in order to improve the speech signal and there are many more situations where noise is a disturbing factor to the speech signal. This application is especially important for video and audio conferences, where noise can significantly decrease speech intelligibility.
 
