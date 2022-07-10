@@ -14,8 +14,6 @@ The currrent noise suppression techniques uses Multi-mic system.
 
 [[Watch the video]](https://youtu.be/nKR0W6nJChU)
 
-### Input Noisy Audio
-<audio src="noisy2.wav" ></audio>
 
 ## 🔗 Links 
 [[Web App]](https://m0hammad-kashif-denoisingaudio-main-auy054.streamlitapp.com/)
