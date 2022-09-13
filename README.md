@@ -11,6 +11,14 @@ The currrent noise suppression techniques uses Multi-mic system.
 ## Solution
  We tackle this problem using Convolutional & Transpose Convolutional Neural Network . Given a noisy input signal from a single microphone, we aim to build a model that can extract the clean signal from the given noisy input signal and return it to the user. 
 
+- Noisy Audio
+
+![](assets/NoiseAudio.png)
+
+- Clean Audio
+
+![](assets/cleanAudio.png)
+
 ## Demo 
 
 [[Watch the video]](https://youtu.be/nKR0W6nJChU)
